@@ -1,0 +1,53 @@
+.wrap{
+  background: #eee;
+  margin-top: 1rem;
+
+  &:hover{
+    box-shadow: 0 0 10px -3px rgba(#000, .5);
+  }
+}
+
+.box{
+  transition: all linear .2s;
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.checkbox{
+  flex: 0 0 30px;
+  width: 30px;
+}
+
+.title{
+  flex: 0 0 calc(100% - 250px);
+  width: calc(100% - 250px);
+}
+
+.action{
+  flex: 0 0 220px;
+  width: 220px;
+  text-align: right;
+
+  :global{
+    .btn{
+      &:not(:last-child){
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.detail{
+  padding: 1rem;
+}
+
+.inputCheck{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
